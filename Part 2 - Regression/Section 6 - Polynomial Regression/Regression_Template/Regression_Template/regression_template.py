@@ -24,6 +24,7 @@ y_train = sc_y.fit_transform(y_train)"""
 
 # Fitting the Regression Model to the dataset
 # Create your regressor here
+# Need input here
 
 # Predicting a new result
 y_pred = regressor.predict(6.5)

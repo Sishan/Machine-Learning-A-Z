@@ -2,6 +2,7 @@
 
 # Importing the dataset
 dataset = read.csv('Position_Salaries.csv')
+# Only select level and salary column
 dataset = dataset[2:3]
 
 # Splitting the dataset into the Training set and Test set
@@ -19,6 +20,7 @@ dataset = dataset[2:3]
 # Fitting Linear Regression to the dataset
 lin_reg = lm(formula = Salary ~ .,
              data = dataset)
+summary(lin_reg)
 
 # Fitting Polynomial Regression to the dataset
 dataset$Level2 = dataset$Level^2
@@ -26,6 +28,7 @@ dataset$Level3 = dataset$Level^3
 dataset$Level4 = dataset$Level^4
 poly_reg = lm(formula = Salary ~ .,
               data = dataset)
+summary(poly_reg)
 
 # Visualising the Linear Regression results
 # install.packages('ggplot2')
