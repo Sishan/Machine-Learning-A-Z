@@ -1,5 +1,5 @@
 # Machine Learning A-Z: Hands On Python and R Notes
-Course notes and sample codes for Machine Learning A-Z
+Course notes and sample codes for Machine Learning
 
 ## Course Content:
 
